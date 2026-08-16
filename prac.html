@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>practice</title>
+</head>
+<body>
+
+    <form id="myForm">
+        <input type="text" id="myInput" placeholder="Enter something">
+        <button type="submit">Click Me</button>
+    </form>
+
+    <script>
+        const form = document.getElementById("myForm");
+        const input = document.getElementById("myInput");
+
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Button clicked!");
+            console.log(input.value);
+        });
+    </script>
+
+</body>
+</html>
